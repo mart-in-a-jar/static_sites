@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lindas SMS counter</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="./main.js" defer></script>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="img/favicon-16x16.png"
+        />
+        <link rel="manifest" href="img/favicon/site.webmanifest" />
+    </head>
+    <body>
+        <h1>Lindas SMS-sjekk</h1>
+        <div class="main">
+            <div class="input-group">
+                <label for="sms-body">Melding</label>
+                <textarea
+                    name="sms-body"
+                    id="sms-body"
+                    cols="50"
+                    rows="10"
+                ></textarea>
+            </div>
+            <div class="input-group">
+                <label for="amount">Antall SMS</label>
+                <input type="number" name="amount" id="amount" value="1" min="0"/>
+            </div>
+            <table>
+                <thead>
+                    <td></td>
+                    <th>NOK (kr)</th>
+                    <th>USD ($)</th>
+                </thead>
+                <tr class="price-total">
+                    <th ">Pris totalt</th>
+                    <td id="price-total-nok"></td>
+                    <td id="price-total-usd"></td>
+                </tr>
+                <tr>
+                    <th class="price">Pris pr sms</th>
+                    <td id="price-nok"></td>
+                    <td id="price-usd"></td>
+                </tr>
+                <table>
+                    <tr>
+                        <td>Antall segmenter</td>
+                        <td id="segments"></td>
+                    </tr>
+                    <tr>
+                        <td >Encoding</td>
+                        <td id="encoding"></td>
+                    </tr>
+                </table>
+            </table>
+        </div>
+        <img class="woah" src="./img/giphy.webp" alt="" />
+    </body>
+</html>

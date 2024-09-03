@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "sms-segments-calculator": "^1.1.1"
+  },
+  "name": "sms_segments",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "mart-in-a-jar",
+  "license": "ISC",
+  "description": ""
+}
